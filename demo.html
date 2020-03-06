@@ -20,7 +20,7 @@
 
   <!-- Start your project here-->
 
-  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -60,41 +60,12 @@
   
   
   
-  <div class="card panels-card">
-
-  <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark grey lighten-5 d-flex justify-content-between z-depth-1-bottom">
-
-      <div>
-        <ul class="list-inline my-2 py-1 dark-grey-text">
-          <li class="list-inline-item">
-            <i class="fas fa-bars" aria-hidden="true"></i>
-          </li>
-          <li class="list-inline-item font-weight-bold text-uppercase">
-            HIT
-          </li>
-        </ul>
-      </div>
-
-  <!--    <div>
-        <ul class="list-inline my-2 py-1 dark-grey-text">
-          <li class="list-inline-item">
-            <i class="fas fa-search" aria-hidden="true"></i>
-            <i class="fas fa-ellipsis-v pl-3" aria-hidden="true"></i>
-          </li>
-        </ul>
-      </div>
-   -->
-   
-   
-  </nav>
-  <!--/.Navbar-->
+<div class="card panels-card">
 
   <div class="card-body grey lighten-5 rounded-bottom">
 
     <!-- Grid row -->
     <div class="row">
-
       <!-- Grid column -->
       <div class="col-12 p-1">
         <div class="card grey lighten-2">
@@ -110,37 +81,20 @@
             <h6 class="font-weight-bold mb-1">Room temperature</h6>
             <p class="mb-0">Current room temperature measured by HIT device</p>
           </div>
-        </div>
-      </div>
-      <!-- Grid column -->
-  </div>
-  
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-12 p-1">
-        <div class="card grey lighten-2">
+          <hr>
+          
           <div class="card-body pb-0">
-            <i class="fas fa-thermometer-half fa-3x pb-4"></i>
             <div class="d-flex justify-content-between">
               <p class="mb-0 h5" id="setPointTemperature"></p>
-
-              <!-- thermostat playground -->
-              
-            
-
-			<div class="input-group number-spinner">
-				<span class="input-group-btn">
-					<button class="btn btn-default" data-dir="dwn"><span class="fa fa-minus"></span></button>
-				</span>
-				<input type="text" class="form-control text-center" id="setpointValue" value="21">
-				<span class="input-group-btn">
-					<button class="btn btn-default" data-dir="up"><span class="fa fa-plus"></span></button>
-				</span>
-			</div>
-
-              <!-- thermostat playground -->
+              <div class="input-group number-spinner">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" data-dir="dwn"><span class="fa fa-minus"></span></button>
+                </span>
+                <input type="text" class="form-control text-center" id="setpointValue" value="21">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" data-dir="up"><span class="fa fa-plus"></span></button>
+                </span>
+              </div>
             </div>
           </div>
           <hr>
@@ -151,13 +105,14 @@
         </div>
       </div>
       <!-- Grid column -->
-  </div>
-  
-      <!-- Grid row -->
+    </div>
+    
+
+    <!-- Grid row -->
     <div class="row">
 
       <!-- Grid column -->
-      <div class="col-12 p-1">
+      <div class="col-6 p-1">
         <div class="card grey lighten-2">
           <div class="card-body pb-0">
             <i class="fas fa-fire fa-3x pb-4"></i>
@@ -174,14 +129,9 @@
         </div>
       </div>
       <!-- Grid column -->
-  </div>
-  
-  
-  <!-- Grid row -->
-    <div class="row">
 
       <!-- Grid column -->
-      <div class="col-12 p-1">
+      <div class="col-6 p-1">
         <div class="card grey lighten-2">
           <div class="card-body pb-0">
             <i class="fas fa-bolt fa-3x pb-4"></i>
@@ -198,10 +148,10 @@
         </div>
       </div>
       <!-- Grid column -->
-  </div>
+    </div>
 
 
-       <!-- Grid row -->
+    <!-- Grid row -->
     <div class="row">
 
       <!-- Grid column -->
@@ -218,43 +168,19 @@
           <div class="card-body pt-0">
             <h6 class="font-weight-bold mb-1">Application update status</h6>
             <p class="mb-0">
-            <p id="updateStatus"></p>
+            <p id="updateStatus">--</p>
             <button type="button" class="btn btn-primary btn-rounded" id="updateButton">Update NOW</button>
             <button type="button" class="btn btn-primary btn-rounded" id="downgradeButton">Downgrade</button>
             </p>
-            
-          </div>
-        </div>
-      </div>
-      <!-- Grid column -->
-  </div>
-  
-  
-    <!-- Grid row -->
-    <div class="row">
-      <!-- Grid column -->
-      <div class="col-12 p-1">
-        <div class="card grey lighten-2">
-          <div class="card-body pt-0">
-            <h6 class="font-weight-bold mb-1">Test</h6>
-            <p class="mb-0">
-            <p id="test-caption">Subscribe or unsubscribe to test.throughput_test*</p>
-            <p id="test-message0"></p>
-            <p id="test-message1"></p>
-            <p id="test-message2"></p>
-            <p id="test-message3"></p>
-            <button type="button" class="btn btn-primary btn-rounded" id="subscribeTestButton">Subscribe</button>
-            <button type="button" class="btn btn-primary btn-rounded" id="unsubscribeTestButton">Unsubscribe</button>
-            </p>
-            
-          </div>
-        </div>
-      </div>
-      <!-- Grid column -->
-  </div>
-      
 
-       <!-- Grid row -->
+          </div>
+        </div>
+      </div>
+      <!-- Grid column -->
+    </div>
+
+
+    <!-- Grid row -->
     <div class="row">
 
       <!-- Grid column -->
@@ -266,14 +192,15 @@
             <p id="logout-users"></p>
             <button type="button" class="btn btn-primary btn-rounded" id="logoutButton">Log out</button>
             </p>
-            
+
           </div>
         </div>
       </div>
       <!-- Grid column -->
+    </div>
+
+
   </div>
-  
-  
 </div>
   <!-- End your project here-->
   
